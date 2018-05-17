@@ -17,6 +17,7 @@ func (e Exposure) IsPrivate() bool {
 
 type ReconciliateResponse struct {
 	InstanceID  string `json:"instance_id"`
+	BindingNB   int    `json:"binding_nb"`
 	MasterZone  *Zone  `json:"master_zone,omitempty"`
 	CurrentZone *Zone  `json:"current_zone,omitempty"`
 }
